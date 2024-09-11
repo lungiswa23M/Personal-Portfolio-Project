@@ -31,6 +31,11 @@ body {
     font-weight: 600;
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
 .navbar a{
     font-size: 18px;
     color: #fff;
@@ -39,9 +44,30 @@ body {
     margin-left: 35px;
 }
 
+.navbar {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 4%;
+    background: var(--bg-color);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0, .2);
+}
+
+.navbar.active {
+    left: 0;
+}
+
 .navbar a:hover,
 .navbar a.active {
     color: aqua;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
 }
 
 .home {
@@ -70,6 +96,11 @@ body {
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
+}
+
+.home-content .text-animate {
+    position: relative;
+    width: 32.8rem;
 }
 
 .home-content .btn-box {
